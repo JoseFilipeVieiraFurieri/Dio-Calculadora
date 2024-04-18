@@ -1,15 +1,18 @@
 import { ClearContainer } from "./styles";
+import { useNumber } from "../../NumberContext";
 
 
 export const ClearButtom = () => {
 
-    const Clear = () => {
-        console.log("remove");
+    const { setCurrentNumber } = useNumber();
+
+    const handleClearButton = () => {
+        setCurrentNumber("0")
     }
 
     return (
         <ClearContainer>
-            <button type="buttom" onClick={Clear}>Clear</button>
+            <button type="button" onClick={handleClearButton} className="clear">Clear</button>
         </ClearContainer>
     )
 }

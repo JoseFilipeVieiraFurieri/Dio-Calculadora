@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const InputContainer = styled.div`
     width: 100%;
-    heigh: 75px;
+    height: 75px;
     background-color: #AAFFAA;
 
     display: flex;

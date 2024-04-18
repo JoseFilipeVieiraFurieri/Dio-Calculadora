@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const ClearContainer = styled.button`
+export const ClearContainer = styled.div`
     width: 100%;
     padding: 0;
-    background-color: blue;
 
 
     button {
@@ -12,5 +11,9 @@ export const ClearContainer = styled.button`
         background-color: blue;
         height: 5vh;
         font-size: 2rem;
+    }
+
+    .clear:hover {
+       opacity: 0.8;
     }
 `

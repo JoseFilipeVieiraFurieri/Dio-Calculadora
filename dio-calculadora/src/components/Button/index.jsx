@@ -10,7 +10,6 @@ const Button = ({ handleclick }) => {
         console.log("clicou");
          const operationArray = currentNumber.split(/(?<=\d)(?=\D)|(?<=\D)(?=\d)/);
          const result = calculator(operationArray);
-         console.log(result);
          setCurrentNumber(result);
          
      }

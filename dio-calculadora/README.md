@@ -14,8 +14,14 @@
 - Styled components
 - Git/Github
 
+# Utilizando o projeto
+  - Baixar o repositorio
+  - Baixar as dependencias
+  - npm start
+
 # Adiçoes Futuras
 
 - Novas features( exponenciação , potencialização, etc)
 - Melhorar a estilização
 - Portabilidade
+- Deploy ( no momento deu um erro na hora do deploy tanto no github pages quanto no  vercel, mas ainda falta configurar criar a rota  corretamente)

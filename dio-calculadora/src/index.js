@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { NumberProvider } from './NumberContext';
 
 import createGlobalStyle  from "styled-components";
 const GlobalStyle = createGlobalStyle`
@@ -18,8 +19,10 @@ body {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GlobalStyle />
-    <App />
+    <NumberProvider>
+      <GlobalStyle />
+      <App />
+    </NumberProvider>
   </React.StrictMode>
 );
 
